@@ -1,0 +1,408 @@
+
+.admin-trigger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.admin-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3e2a1f;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #b08b5b;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bg-container {
+    background-color: bisque;
+}
+
+.book {
+    font-size: 22px;
+    color: #b08b5b;
+}
+
+.starting-title {
+    font-family: Copperplate Gothic Light;
+    font-weight: 800;
+    margin-top: 10px;
+    padding-left: 8px;
+    text-decoration: underline;
+}
+
+.nav-headings {
+    margin-left: auto;
+}
+
+
+.cover-page-text-title {
+    font-family: Copperplate Gothic Light;
+    text-decoration: underline;
+    font-size: 32px;
+    text-align: center;
+}
+
+.cover-page-text-paragraph {
+    font-family: Lucida Handwriting;
+    font-size: 18px;
+    text-align: center;
+}
+
+.author-name {
+    font-family: Calisto MT;
+    text-align: center;
+}
+
+.description-container {
+    margin: 18px;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    font-style: italic;
+}
+
+
+
+
+.novel-footer {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.novel-footer h3 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.rating-section {
+    margin: 20px 0;
+}
+
+.stars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-size: 30px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    color: #444;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stars label:hover,
+.stars label:hover~label,
+.stars input:checked~label {
+    color: gold;
+}
+
+copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+@media  (min-width: 992px) {
+  .cover-page-container {
+    display: flex;
+    flex-direction: row;
+  }
+    
+  .cover-page-img {
+      height: 500px;
+      width: 350px;
+      margin: 60px;
+    }
+    
+  .cover-page-text-title {
+      font-family: Copperplate Gothic Light;
+      text-decoration: underline;
+      font-size: 32px;
+      text-align: center;  
+    }
+    
+  .cover-page-text-container {
+      margin: 100px;
+      margin-top: 140px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+  .description-container {
+      margin: 18px;
+      padding: 18px;
+      border-radius: 12px;
+      background-color: aliceblue;
+      font-style: italic;
+    }
+
+  .description-para {
+      font-size: 17px;
+    }
+    
+  .language-selection-heading {
+      margin: 18px;
+      margin-left: 80px;
+      font-size: 26px;  
+    }
+    
+  .choosing-language-name-conatiner {
+      font-size: 32px;
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      margin-left: 150px;
+    }
+    
+  .choosing-language-name{
+      font-size: 20px;
+      margin: 24px;
+    }
+    
+  .feedback-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  .form-box {
+      background: white;
+      padding: 30px;
+      width: 650px;
+      height: 450px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+  .feedback-first-heading {
+      font-size: 32px;
+      padding: 16px;
+    }
+    
+  .feedback-heading {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    
+  input,textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 18px;
+    }
+    
+  textarea {
+      height: 100px;
+      resize: none;
+  }
+    
+  .submit-btn-feedback {
+      width: 100px;
+      padding: 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #1f4037;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 24px;
+      margin-left: 0px;
+  }
+    
+  button:hover {
+      background-color: #14532d;
+  }
+    
+  .label-text {
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  
+
+  .pdf-card {
+      background: bisque;
+      padding: 20px;
+      border-radius: 12px;
+      height: 100%;
+      background-size: cover;
+  }
+
+  iframe {
+      height: 100vh;
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  .language-name {
+      font-family: Garamond;
+      font-weight: bold;
+  }
+
+
+}
+
+@media  (max-width: 991px) {
+    .cover-page-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cover-page-img {
+        height: 500px;
+        width: 350px;
+        margin: 80px;
+        margin-top: 60px;
+        margin-bottom: 8px;
+    }
+    
+    .cover-page-text-title {
+        font-family: Copperplate Gothic Light;
+        text-decoration: underline;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .description-para {
+      font-size: 13px;
+    }
+    
+    .language-selection-heading {
+        margin: 18px;
+        margin-left: 24px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .choosing-language-name-conatiner {
+        margin: 24px;
+    }
+    
+    .choosing-language-name{
+        font-size: 17px;
+    }
+    
+    .feedback-container {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+    }
+    
+    .form-box {
+        background: white;
+        padding: 30px;
+        width: 450px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .feedback-first-heading {
+        font-size: 24px;
+        padding: 14px;
+    }
+    
+    .feedback-heading {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    .submit-btn-feedback {
+        width: 90px;
+        padding: 12px;
+        border: none;
+        border-radius: 12px;
+        background-color: #1f4037;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 12px;
+        margin-left: 0px;
+    }
+    
+    button:hover {
+        background-color: #14532d;
+    }
+    
+    .label-text {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+   .pdf-card {
+      background: bisque;
+      padding: 20px;
+      border-radius: 12px;
+      height: 100%;
+      background-size: cover;
+  }
+
+  iframe {
+      height: 100vh;
+      width: 100%;
+      border-radius: 18px;
+  }
+
+  .language-name {
+      font-family: Garamond;
+      font-weight: bold;
+      font-size: 32px;
+  }
+
+}
